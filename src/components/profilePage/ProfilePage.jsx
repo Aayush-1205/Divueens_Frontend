@@ -47,32 +47,32 @@ function ProfilePage() {
     }
 
     return (
-        <div className='bg-slate-100 flex my-10 h-auto'>
-            <div className='flex flex-col justify-center items-start bg-slate-100 text-center px-3 gap-6 min-w-10 sm:w-[20%] h-[100%]'>
-                <h2 className='hidden sm:block sm:font-extrabold sm:p-3 md:p-5 md:text-[20px]'>My Account</h2>
+        <div className='flex px-4 lg:px-44 justify-center'>
+            <div className='flex flex-col items-center md:items-start mt-4 border border-rose-400 rounded-3xl md:pl-6 gap-6 md:gap-4 md:w-56 w-12 md:h-[28rem]'>
+                <h2 className='hidden sm:flex font-semibold pt-4 md:text-[20px]'>My Account</h2>
                 <div
                     onClick={() => handleTabActiveState("myprofile")}
-                    className={`flex justify-center items-center sm:gap-3 hover:border-b-[2px] border-b-rose-700 p-2 cursor-pointer ${isTabActive === 'myprofile' ? 'border-b-[2px] border-b-rose-700' : ''}`}>
-                    <div className='text-[20px] sm:text-[30px]'><CgProfile /></div>
-                    <h3 className='hidden md:block'>My Profile</h3>
+                    className={`flex items-start md:items-center mt-8 md:mt-0 md:w-full rounded-full md:rounded-e-xl sm:gap-3 hover:bg-rose-300 hover:text-white p-2 cursor-pointer ${isTabActive === 'myprofile' ? 'bg-rose-300 text-white' : ''}`}>
+                    <div className='text-[1.2rem] md:text-[1rem] lg:text-[1.5rem]'><CgProfile /></div>
+                    <h3 className='hidden md:flex'>My Profile</h3>
                 </div>
                 <div
                     onClick={() => handleTabActiveState("wishlist")}
-                    className={`flex justify-center items-center sm:gap-3 hover:border-b-[2px] border-b-rose-700 p-2 cursor-pointer ${isTabActive === 'wishlist' ? 'border-b-[2px] border-b-rose-700' : ''}`}>
-                    <div className='text-[20px] sm:text-[30px]'><FaRegHeart /></div>
-                    <h3 className='hidden md:block'>Wishlist</h3>
+                    className={`flex items-start md:items-center md:w-full rounded-full md:rounded-e-xl sm:gap-3 hover:bg-rose-300 hover:text-white p-2 cursor-pointer ${isTabActive === 'wishlist' ? 'bg-rose-300 text-white' : ''}`}>
+                    <div className='text-[1.2rem] md:text-[1rem] lg:text-[1.5rem]'><FaRegHeart /></div>
+                    <h3 className='hidden md:flex'>Wishlist</h3>
                 </div>
                 <div
                     onClick={() => handleTabActiveState("myorders")}
-                    className={`flex justify-center items-center sm:gap-3 hover:border-b-[2px] border-b-rose-700 p-2 cursor-pointer ${isTabActive === 'myorders' ? 'border-b-[2px] border-b-rose-700' : ''}`}>
-                    <div className='text-[20px] sm:text-[30px]'><RiShoppingCartLine /></div>
-                    <h3 className='hidden md:block'>My Orders</h3>
+                    className={`flex items-start md:items-center md:w-full rounded-full md:rounded-e-xl sm:gap-3 hover:bg-rose-300 hover:text-white p-2 cursor-pointer ${isTabActive === 'myorders' ? 'border-b-[2px] border-b-rose-700' : ''}`}>
+                    <div className='text-[1.2rem] md:text-[1rem] lg:text-[1.5rem]'><RiShoppingCartLine /></div>
+                    <h3 className='hidden md:flex'>My Orders</h3>
                 </div>
                 <div
                     onClick={handleLogout}
-                    className='flex justify-center items-center sm:gap-3 hover:border-b-[2px] border-b-rose-700 p-2 cursor-pointer'>
-                    <div className='text-[20px] sm:text-[30px]'><MdLogout /></div>
-                    <h3 className='hidden md:block'>Logout</h3>
+                    className='flex items-start md:items-center md:w-full rounded-full md:rounded-e-xl sm:gap-3 hover:bg-rose-300 hover:text-white p-2 cursor-pointer'>
+                    <div className='text-[1.2rem] md:text-[1rem] lg:text-[1.5rem]'><MdLogout /></div>
+                    <h3 className='hidden md:flex'>Logout</h3>
                 </div>
             </div>
             <div className='w-[80%] h-[full] bg-white'>

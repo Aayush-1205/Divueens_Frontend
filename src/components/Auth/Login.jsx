@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FcGoogle } from 'react-icons/fc';
 import { Link } from 'react-router-dom';
+import Divueens from '../../assets/Divueens3.jpg'
 
 const Login = ({ move, setMove }) => {
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -27,6 +28,8 @@ const Login = ({ move, setMove }) => {
         action="/"
         className={`w-1/2 [transition:all_0.6s_cubic-bezier(0.68,-0.55,0.265,1.55)] ${move ? 'ml-0' : 'ml-[-50%]'} flex flex-col items-center justify-center`}
       >
+        <img src={Divueens} alt="" className='h-20 mb-6 md:mb-12 lg:mb-8 w-32 md:h-20' />
+
         <h2 className='font-semibold text-[20px] md:text-[25px] text-center'>Login With Mobile</h2>
         <div className="w-full mt-6 md:mt-[20px] ">
           <input

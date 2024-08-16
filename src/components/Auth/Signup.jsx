@@ -2,6 +2,8 @@ import React, { useEffect, useState, useRef, useContext } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { AuthContext } from "../../context/AuthContext";
+import Divueens from '../../assets/Divueens3.jpg'
+
 
 const Signup = ({ move, setMove, changeView }) => {
   const { OTP, autherisation, setAutherisation } = useContext(AuthContext);
@@ -59,8 +61,10 @@ const Signup = ({ move, setMove, changeView }) => {
         action="#"
         className="w-1/2 [transition:all_0.6s_cubic-bezier(0.68,-0.55,0.265,1.55)] flex flex-col items-center justify-center"
       >
-        <h2 className='font-semibold text-[20px] mt-8 md:text-[25px] text-center'>Verify Your OTP</h2>
-        <div className="h-[50px] w-full mt-6 lg:mt-8 flex items-center justify-evenly">
+        <img src={Divueens} alt="" className='h-20 w-32 md:h-20' />
+
+        <h2 className='font-semibold text-[20px] mt-2 md:text-[20px] lg:text-[25px] text-center'>Verify Your OTP</h2>
+        <div className="h-[50px] w-full mt-6 lg:mt-4 flex items-center justify-evenly">
           {[...Array(4)].map((_, index) => (
             <input
               key={index}

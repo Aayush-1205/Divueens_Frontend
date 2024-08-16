@@ -179,19 +179,19 @@ const MyProfilePage = () => {
           </div>
         </div>
       ) : (
-        <div className="relative md:ml-10 max-w-screen-2xl bg-white shadow-md rounded-md md:p-10 md:mt-6 m-3 pl-4">
+        <div className="relative max-w-screen-3xl border border-rose-300 bg-white rounded-3xl md:p-10 m-4 px-4 py-4">
           <h2 className="font-semibold md:absolute md:top-6 md:text-xl text-base">
             Profile Picture
           </h2>
           <div className="flex flex-col">
             <img
-              className="md:w-24 md:h-24 w-20 h-20 rounded-full object-cover mt-3 mb-3"
+              className="md:w-24 md:h-24 w-20 h-20 rounded-full object-cover mt-2 md:mt-5 mb-3"
               src={picture}
               alt=""
             />
             <div>
               <button
-                className="md:mr-10 bg-rose-200 text-black py-1 md:px-8 px-3 rounded-md mr-3"
+                className="md:mr-10 bg-rose-300 text-white hover:bg-rose-500 py-1 md:px-8 px-3 rounded-md mr-3"
                 onClick={() => document.getElementById("pictureInput").click()}
               >
                 <div className="sm:hidden">
@@ -200,7 +200,7 @@ const MyProfilePage = () => {
                 <div className="hidden sm:block">Change Picture</div>
               </button>
               <button
-                className="bg-rose-200 text-black py-1 md:px-8 px-3 rounded-md"
+                className="bg-rose-300 text-white hover:bg-rose-500 py-1 md:px-8 px-3 rounded-md"
                 onClick={handleDeletePicture}
               >
                 <div className="sm:hidden">
@@ -216,7 +216,7 @@ const MyProfilePage = () => {
               />
             </div>
           </div>
-          <div className="mt-8">
+          <div className="mt-4 md:mt-8">
             <p className="mb-3">
               <strong>Full Name:</strong> {name}
             </p>
@@ -236,7 +236,7 @@ const MyProfilePage = () => {
 
           <button
             onClick={() => setIsEditing(true)}
-            className="flex items-center bg-gray-200 text-black md:py-2 md:px-4 px-2 py-1 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 absolute right-4 top-4"
+            className="flex items-center border-rose-400 border text-rose-400 md:py-2 md:px-4 px-2 py-1 rounded-md hover:bg-rose-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-rose-400 absolute right-4 top-4"
           >
             Edit <span className="ml-2">✏️</span>
           </button>
